@@ -1,6 +1,6 @@
 //Imports
 import axios from 'axios'
-import {useState, useEffect} from 'react-router-dom'
+import {useState, useEffect} from 'react'
 import {Routes, Route} from 'react-router-dom'
 
 //Components
@@ -20,22 +20,27 @@ import "./App.css";
 import UserContext from "./Contexts/UserContext"
 
 function App() {
+
+  const [weather, setWeather] = useState([])
+
+  useEffect(() => {
+    fetchWeather()
+  }, [])
+
+  const fetchWeather = async () => {
+    try {
+      const response = await axios.get("http://api.openweathermap.org/data/2.5/weather?lat=32.779167&lon=-96.808891&appid=a91119eebbd33281141d01dd1405669b")
+      console.log(response.data)
+      // console.log(response.data)
+    } catch(error) {
+      console.log(error)
+    }
+  }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
