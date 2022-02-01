@@ -30,7 +30,7 @@ function App() {
   const fetchWeather = async () => {
     try {
       const response = await axios.get("http://api.openweathermap.org/data/2.5/weather?lat=32.779167&lon=-96.808891&appid=a91119eebbd33281141d01dd1405669b")
-      console.log(response.data)
+      setWeather(response.data)
       // console.log(response.data)
     } catch(error) {
       console.log(error)
@@ -40,7 +40,7 @@ function App() {
   
   return (
     <div className="App">
-      
+      {weather.name}
     </div>
   );
 }
