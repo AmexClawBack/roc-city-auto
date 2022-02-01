@@ -1,5 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//Imports
+import axios from 'axios'
+import {useState, useEffect} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
+
+//Components
+import Nav from "./Components/Nav"
+import Footer from "./Components/Footer"
+
+//Pages
+import Home from "./Pages/Home"
+import Inventory from "./Pages/Inventory"
+import Contact from "./Pages/Contact"
+import About from "./Pages/About"
+
+// CSS
+import "./App.css";
+
+// Contexts
+import UserContext from "./Contexts/UserContext"
 
 function App() {
   return (
