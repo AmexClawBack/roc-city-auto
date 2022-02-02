@@ -1,7 +1,10 @@
 //Imports
 import axios from 'axios'
 import {useState, useEffect} from 'react'
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
+import { faFacebook, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons' 
+
 
 //Components
 import Nav from "./Components/Nav"
@@ -40,7 +43,17 @@ function App() {
   
   return (
     <div className="App">
-      {weather.name}
+     
+      <Nav />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='inventory' element={<Inventory />} />
+      <Route path='about' element={<About />} />
+      <Route path='contact' element={<Contact />} />
+    </Routes>
+       
+      <Footer  FontAwesomeIcon={FontAwesomeIcon} faFacebook={faFacebook} faInstagram={faInstagram} faTwitter={faTwitter}/>
+     
     </div>
   );
 }

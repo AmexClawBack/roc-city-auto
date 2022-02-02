@@ -1,0 +1,30 @@
+.centerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footerBackground {
+    /* background-color: #66594e  ; */
+    background-image: linear-gradient(to right, #3a3027 10%, #66594e 20%, #66594e 80%, #3a3027 90%);
+}
+
+.links {
+    text-decoration: none;
+    color: #212529;
+}
+
+.socialBox{
+    width: 50%;
+    display: flex;
+  border: 1px solid red;
+   justify-content: center;
+}
+
+span {
+    color: red
+}
+
+.span2 {
+    color: #75935f
+}
