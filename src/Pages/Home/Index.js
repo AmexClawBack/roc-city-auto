@@ -6,10 +6,12 @@ const Home = () => {
    
     return (
         <main className="page landing-page">
-        <section className="clean-block clean-hero" className="background">
-            <div className="text">
-                <h2>You have the cash, we have the car!</h2>
-                <p>#1 Cash Car Dealer in the Dallas Fort-Worth Metroplex</p><button className="btn btn-outline-light btn-lg" type="button">See Why!</button>
+        <section className="clean-block clean-hero " className="background overlay">
+            <div className="text d-flex justify-content-center flex-column align-items-center ">
+                <div className='firstText'>
+                <h2 >You have the cash, we have the car!</h2>
+                <p >#1 Cash Car Dealer in the Dallas Fort-Worth Metroplex</p><button className="btn btn-outline-light btn-lg" type="button">See Why!</button>
+            </div>
             </div>
         </section>
         <section className="clean-block clean-info dark">

@@ -4,8 +4,29 @@
         url(
       "../../Images/Lot-Font.png");
         background-size: "cover";
-        height: 100vh;
+         height: 100vh;
+         /* max-width: auto; */
         margin-top: -70px;
-        font-size:50px;
+        font-size:50px; 
         background-repeat:no-repeat; 
+        background-position: center center;
+        background-attachment: fixed;
+        
+      }
+
+      .overlay {
+        
+        background-color: grey;
+        background-size:cover;
+        opacity: 49
+      }
+
+      .firstText {
+      
+          margin-top: 4em;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 2em
       }
