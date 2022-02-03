@@ -1,9 +1,12 @@
 import React from 'react';
+import './Home.css';
+import carLot from "../../Images/Lot-Font.png"
 
 const Home = () => {
+   
     return (
         <main className="page landing-page">
-        <section className="clean-block clean-hero" style={{color: "rgba(9, 162, 255, 0.85), background: url(&quot;assets/img/Lot-Font.png&quot;)"}}>
+        <section className="clean-block clean-hero" className="background">
             <div className="text">
                 <h2>You have the cash, we have the car!</h2>
                 <p>#1 Cash Car Dealer in the Dallas Fort-Worth Metroplex</p><button className="btn btn-outline-light btn-lg" type="button">See Why!</button>
