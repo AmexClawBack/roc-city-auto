@@ -32,7 +32,7 @@ const Footer = ({ FontAwesomeIcon, faFacebook, faInstagram, faTwitter }) => {
                         
                        
                     </div>
-                    <p className="copyright d-flex justify-content-center" >Company Name © 2022</p>
+                    <p className="copyright d-flex justify-content-center" >Roc-City-Auto, LLC. © 2022</p>
                 </div>
             </footer>
         
