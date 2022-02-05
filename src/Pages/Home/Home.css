@@ -3,7 +3,7 @@
         background-image: 
         url(
       "../../Images/Lot-Font.png");
-        background-size: "cover";
+       
          height: 100vh;
          /* max-width: auto; */
         margin-top: -70px;
@@ -12,14 +12,12 @@
         background-position: center center;
         background-attachment: fixed;
         
+        background-size:cover;
+       
+        
       }
 
-      .overlay {
-        
-        background-color: grey;
-        background-size:cover;
-        opacity: 49
-      }
+      
 
       .firstText {
       
@@ -29,4 +27,12 @@
           display: flex;
           flex-direction: column;
           gap: 2em
+      }
+
+      .btnMargin{
+        margin-top:25%
+      }
+
+      .titleMargin {
+        margin-top:20%
       }
