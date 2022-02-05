@@ -21,7 +21,7 @@ const Home = () => {
             <div className="text d-flex justify-content-center flex-column align-items-center ">
                 <div className='firstText'>
                 
-                <h1 className='ml-2 mr-2 pl-2 pr-2 titleMargin'>Your <span>#1 Place</span> For Used Cash Cars In Dallas </h1>
+                <h1 className='ml-2 mr-2 pl-2 pr-2 titleMargin textColor '>Your <span>#1 Place</span> For Used Cash Cars In Dallas </h1>
                 <button className="btn btn-danger btn-lg  shadow-lg btnMargin" type="button">Browse Inventory</button>
             </div>
             </div>
@@ -117,7 +117,7 @@ const Home = () => {
             
         </section>
 
-        {/* ABOUT TEXT*/}
+        {/* */}
        
     </main>
     );
