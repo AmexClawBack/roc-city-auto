@@ -1,13 +1,16 @@
 // import { useContext } from 'react'
 import { faSun, faCloud, faCloudRain } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 // import UserContext from ".../.../contexts/UserContext"
+
+import { faFacebook, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons' 
 
 
 
 import "./Nav.css"
 
-const Nav = (weather, FontAwesomeIcon) => {
+const Nav = ({ weather }) => {
   console.log(weather)
    
   // const lightmode = useContext(UserContext)
@@ -26,26 +29,29 @@ const Nav = (weather, FontAwesomeIcon) => {
         </Link>
 
       {/* WEATHER API */}
-        <div>{weather.weather.name}</div>
-        <div>{weather.weather.main?.temp}</div>
+        <div>{weather.name}</div>
+        <div>{weather.main.temp}</div>
         
 
       {/* CONDITIONAL RENDERING FOR WEATHER API DISPLAY */}
 
                   {/* ========== STACKOVERFLOW QUESTION BELOW ========== */}
      
-        {/* {
+        {
         
-          weather.weather.weather?.main === "Sun" ? <FontAwesomeIcon icon={faSun} /> && <div>Its nice and sunny! Come on out to see us!</div> : null
+          weather.weather[0].main === "Sun" ? <><FontAwesomeIcon icon={faSun} /> <div>Its nice and sunny! Come on out to see us today!</div> </> : null
         }
         {
-          weather.weather.weather[0]?.main === "Clouds" ? <FontAwesomeIcon icon={faCloud} /> && <div>It's a little cloudy, but rest assured, we are open and ready to help you!</div> : null
+          weather.weather[0].main === "Clouds" ? <><FontAwesomeIcon icon={faCloud} />  <div>It's a little cloudy, but rest assured, we are open and ready to help get you into a used cash car!</div></> : null
         }
         {
-          weather.weather.weather?.main === "Rain" ? <FontAwesomeIcon icon={faCloudRain} /> && <div>It's a little wet outside but we're open. Come on in!</div> : null
-        } */}
+          weather.weather[0].main === "Rain" ? <><FontAwesomeIcon icon={faCloudRain} />  <div>It's a little wet outside but we're open. Come on in to see our selection of used cash cars!</div></> : null
+        }
+        {
+          weather.weather[0].main === "Clear" ? <><FontAwesomeIcon icon={faSun} />  <div>The weather is nice. Let us get you in a used cash car today!</div></> : null
+        }
         
-        {/* ========== STACK OVERFLOW QUESTION ABOVE ========== */}
+                  {/* ========== STACK OVERFLOW QUESTION ABOVE ========== */}
             
             {/* MOBILE NAV BAR */}
         <button

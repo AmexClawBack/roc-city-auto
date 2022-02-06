@@ -2,6 +2,7 @@
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 import { Routes, Route } from 'react-router-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { faFacebook, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons' 
 
@@ -25,7 +26,7 @@ import UserContext from "./Contexts/UserContext"
 
 function App() {
 
-  const [weather, setWeather] = useState([])
+  const [weather, setWeather] = useState()
   
 
   useEffect(() => {
@@ -42,13 +43,17 @@ function App() {
       console.log(error)
     }
   }
+
+  if(!weather){
+    return <div> Loading... </div>
+  }
  
 
   
   return (
     <div className="App">
      
-      <Nav weather={weather} FontAwesomeIcon={FontAwesomeIcon} />
+      <Nav weather={weather} />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='inventory' element={<Inventory />} />

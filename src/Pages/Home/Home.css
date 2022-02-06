@@ -17,7 +17,14 @@
         
       }
 
-      
+      .btnColor {
+        background-color: #75935f;
+        color: white
+      }
+
+      .cardWith {
+        width: 50%;
+      }
 
       .firstText {
       
@@ -36,4 +43,10 @@
       .titleMargin {
         margin-top:29%
 
+      }
+
+      .fullShadow {
+        
+  
+  box-shadow: 5px 5px 20px 5px ;
       }
