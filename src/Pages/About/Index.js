@@ -1,17 +1,18 @@
 import React from 'react';
+import "./About.css"
 
 const About = () => {
     return (
-        <main className="page">
-        <section className="clean-block about-us">
-            <div className="container">
-                <div className="block-heading">
-                    <h2 className="text-info">About Us</h2>
+        <main className="page relative ">
+        <section className="clean-block about-us ">
+            <div className="container ">
+                <div className="block-heading  marginTop mb-5">
+                    <h2 className="text-info ">About Us</h2>
                     <p>We are a team of dedicated car professionals with over 30 years of experience helping get people into cash cars</p>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center mb-5">
                     
-                    <div className="col-sm-6 col-lg-4">
+                    <div className="col-sm-6 col-lg-4 ">
                         <div className="card text-center clean-card"><img className="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg"/>
                             <div className="card-body info">
                                 <h4 className="card-title">Terrick</h4>

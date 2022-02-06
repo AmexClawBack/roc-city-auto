@@ -1,8 +1,9 @@
 import React from 'react';
+import "./Contact.css"
 
 const Contact = () => {
     return (
-        <main className="page contact-us-page">
+        <main className="page contact-us-page  marginTop">
         <section className="clean-block clean-form dark">
             <div className="container">
                 <div className="block-heading">

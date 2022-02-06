@@ -16,7 +16,7 @@ const Nav = ({ weather }) => {
   // const lightmode = useContext(UserContext)
   return (
     <nav
-      className="navbar navbar-light navbar-expand-lg navigation-clean navContainer text-light shadow-lg fixed-top"
+      className="navbar navbar-light navbar-expand-lg navigation-clean navContainer text-light shadow-lg fixed-top  "
       
     >
        <div className="container-fluid">
@@ -37,7 +37,7 @@ const Nav = ({ weather }) => {
 
                   {/* ========== STACKOVERFLOW QUESTION BELOW ========== */}
      
-        {
+        {/* {
         
           weather.weather[0].main === "Sun" ? <><FontAwesomeIcon icon={faSun} /> <div>Its nice and sunny! Come on out to see us today!</div> </> : null
         }
@@ -50,7 +50,7 @@ const Nav = ({ weather }) => {
         {
           weather.weather[0].main === "Clear" ? <><FontAwesomeIcon icon={faSun} />  <div>The weather is nice. Let us get you in a used cash car today!</div></> : null
         }
-        
+         */}
                   {/* ========== STACK OVERFLOW QUESTION ABOVE ========== */}
             
             {/* MOBILE NAV BAR */}
@@ -106,6 +106,16 @@ const Nav = ({ weather }) => {
                 
               >
                 About Us
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link text-light"
+                to="blog"
+                
+              >
+                Blog
               </Link>
             </li>
           </ul>

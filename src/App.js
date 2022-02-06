@@ -17,6 +17,7 @@ import Home from "./Pages/Home"
 import Inventory from "./Pages/Inventory"
 import Contact from "./Pages/Contact"
 import About from "./Pages/About"
+import Blog from "./Pages/Blog"
 
 // CSS
 import "./App.css";
@@ -59,6 +60,7 @@ function App() {
       <Route path='inventory' element={<Inventory />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
+      <Route path='blog' element={<Blog />} />
     </Routes>
        
       <Footer  FontAwesomeIcon={FontAwesomeIcon} faFacebook={faFacebook} faInstagram={faInstagram} faTwitter={faTwitter}/>

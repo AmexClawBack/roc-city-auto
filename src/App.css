@@ -1,5 +1,10 @@
 *{
   font-family: 'Oswald', sans-serif;
+  scroll-padding-top: 200px; 
+}
+
+html {
+  scroll-padding-top: 200px; 
 }
 .photo {
     height: 100%;
@@ -19,3 +24,5 @@
  .darkText {
   color: #222222
  }
+
+ 
