@@ -28,6 +28,9 @@ const Nav = ({ weather }) => {
         ROC CITY AUTOS' CASH CARS
         </Link>
 
+
+        {/*  ICONS TO CALL EMAIL AND THE ADRESS, ICONS INCLUDED*/}
+
       {/* WEATHER API */}
         <div>{weather.name}</div>
         <div>{weather.main.temp}</div>
@@ -55,8 +58,8 @@ const Nav = ({ weather }) => {
             
             {/* MOBILE NAV BAR */}
         <button
-          className="navbar-toggler"
-          data-bs-toggle="collapse"
+          className="navbar-toggler "
+          data-bs-toggle="collapse "
           data-bs-target="#navcol-1"
         >
           <span className="visually-hidden">Toggle navigation</span>
@@ -121,6 +124,7 @@ const Nav = ({ weather }) => {
           </ul>
             </div>
       </div> 
+     
     </nav>
   );
 };

@@ -22,8 +22,8 @@
         color: white
       }
 
-      .cardWith {
-        width: 50%;
+      .cardWidth {
+        width: 30%;
       }
 
       .firstText {
@@ -48,5 +48,15 @@
       .fullShadow {
         
   
-  box-shadow: 5px 5px 20px 5px ;
+       box-shadow: 5px 5px 20px 5px ;
+      }
+
+      .bottomBtn {
+        position: fixed;
+        bottom: -4px;
+        right: 10px
+      }
+
+      .border {
+        border: solid red 1px
       }

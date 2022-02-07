@@ -77,12 +77,12 @@ const Home = () => {
                 <section className="clean-block features" style={{backgroundColor: "#f5efe9"}}>
                 <div className="row justify-content-center " >
                     <div className="col justify-content-start">
-                        <h1 className="text-center  mt-5 mb-5 darkText" ><span style={{color: "#75935f"}}>[ </span>FEATURED VEHICLES <span style={{color: "#75935f"}}>]</span></h1>
-                        <div className="card-group mt-5 mb-5 ">
+                        <h1 className="text-center  mt-5 mb-5 darkText " ><span style={{color: "#75935f"}}>[ </span>FEATURED VEHICLES <span style={{color: "#75935f"}}>]</span></h1>
+                        <div className="card-group mt-5 mb-5 justify-content-center ">
 
                             {/* CARD ONE */}
-                            <div className="card cardWidth" style={{marginRight: "20px"}}><img className="img-fluid card-img-top w-50 d-block  " src={Nissan} style={{height: "200px"}}/>
-                                <div className="card-body">
+                            <div className="card " style={{marginRight: "20px"}}><img className="img-fluid card-img-top w-50 d-block  " src={Nissan} style={{height: "200px"}}/>
+                                <div className="card-body cardWidth">
                                     <h4 className="flex-column justify-content-center card-title">2005 Nissan Sentra</h4>
                                     <p className="d-flex flex-column justify-content-center card-text">Newly acquired&nbsp; 2005 Nissan Sentra that will get you where you need to go!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><button className="btn btnColor d-flex flex-column justify-content-center" type="button">$3,500</button>
                                 </div>
@@ -90,7 +90,7 @@ const Home = () => {
 
                             {/* CARD TWO */}
                             <div className="card" style={{marginRight: "20px"}}><img className="img-fluid card-img-top w-50  d-block " src={Escape} style={{height: "200px"}}/>
-                                <div className="card-body ">
+                                <div className="card-body cardWidth">
                                     <h4 className="d-flex flex-column justify-content-center card-title">2009 Ford escape</h4>
                                     <p className="d-flex flex-column justify-content-center card-text">Perfect for the small family, this mid-size suv is sure to get your family where they need to go.&nbsp;&nbsp;</p><button className="btn btnColor d-flex flex-column justify-content-center" type="button">$6,750</button>
                                 </div>
@@ -98,7 +98,7 @@ const Home = () => {
                             
                             {/* CARD THREE */}
                             <div className="card"><img className="img-fluid card-img-top w-50 d-block " src={GT} style={{height: "200px"}}/>
-                                <div className="card-body">
+                                <div className="card-body cardWidth">
                                     <h4 className="d-flex flex-column justify-content-center card-title">2010 Mustang GT</h4>
                                     <p className="card-text">This Mustang is sure to turn heads wherever you go. Don't miss out on this steal!</p><button className="btn btnColor d-flex flex-column justify-content-center" type="button">$12,000</button>
                                 </div>
@@ -106,6 +106,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <button bottomBtn>Call Us!</button>
+                <button bottomBtn>Message Us!</button>
             
         </section>
 

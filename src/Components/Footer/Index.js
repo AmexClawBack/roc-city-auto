@@ -9,7 +9,8 @@ const Footer = ({ FontAwesomeIcon, faFacebook, faInstagram, faTwitter }) => {
     return (
        
             <footer className="footer" id="footerBackground">
-
+                
+        
                 {/* COMPANY INFO IN FOOTER */}
                 <div className="container" >
                     <div className="row">
