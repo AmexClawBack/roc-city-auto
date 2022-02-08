@@ -42,8 +42,8 @@ const Nav = ({ weather }) => {
         {/*  ICONS TO CALL EMAIL AND THE ADRESS, ICONS INCLUDED*/}
 
       {/* WEATHER API */}
-      <div className="d-flex flex-row gap-2">
-        <div>{weather.name}</div>
+      <div className="d-flex flex-row gap-2 justify-content-around">
+        <div >{weather.name}</div>
         <div>{fahrenheit}&#176;</div>
    
 
