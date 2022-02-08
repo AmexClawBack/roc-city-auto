@@ -60,3 +60,8 @@
       .border {
         border: solid red 1px
       }
+
+      .cardSize {
+        width: 25%;
+        
+      }
