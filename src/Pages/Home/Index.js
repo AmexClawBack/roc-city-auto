@@ -106,8 +106,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <button bottomBtn>Call Us!</button>
-                <button bottomBtn>Message Seller!</button>
+                <button type="button" className="btn btnColor">Call Us!</button>
+                <button type="button" className="btn btn-danger ">Message Seller!</button>
             
         </section>
 
