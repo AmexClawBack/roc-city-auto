@@ -12,12 +12,22 @@ import "./Nav.css"
 
 const Nav = ({ weather }) => {
   console.log(weather)
-   
+  // function temperatureConverter(valNum) {
+  //   valNum = parseFloat(valNum);
+  //   document.getElementById("outputFarenheit").innerHTML=((valNum-273.15)*1.8)+32;
+
+  // }
+  const kelvin = weather.main.temp;
+  const celsius = kelvin - 273;
+
+  let fahrenheit = Math.floor(celsius * (9/5) + 32)
   // const lightmode = useContext(UserContext)
   return (
+    
+    
     <nav
-      className="navbar navbar-light navbar-expand-lg navigation-clean navContainer text-light shadow-lg fixed-top  "
-      
+    className="navbar navbar-light navbar-expand-lg navigation-clean navContainer text-light shadow-lg  "
+    
     >
        <div className="container-fluid">
         <Link
@@ -32,29 +42,37 @@ const Nav = ({ weather }) => {
         {/*  ICONS TO CALL EMAIL AND THE ADRESS, ICONS INCLUDED*/}
 
       {/* WEATHER API */}
+      <div className="d-flex flex-row gap-2">
         <div>{weather.name}</div>
-        <div>{weather.main.temp}</div>
-        
+        <div>{fahrenheit}&#176;</div>
+   
 
-      {/* CONDITIONAL RENDERING FOR WEATHER API DISPLAY */}
 
-                  {/* ========== STACKOVERFLOW QUESTION BELOW ========== */}
+      {/* CONDITIONAL RENDERING FOR WEATHER API DISPLAY ... KEEP IT SIMPLE, ONLY RENDER ICONS */}
+
+                 
+                 
      
-        {/* {
+        {
         
-          weather.weather[0].main === "Sun" ? <><FontAwesomeIcon icon={faSun} /> <div>Its nice and sunny! Come on out to see us today!</div> </> : null
+          weather.weather[0].main === "Sun" ?  <FontAwesomeIcon icon={faSun} />   : null
         }
         {
-          weather.weather[0].main === "Clouds" ? <><FontAwesomeIcon icon={faCloud} />  <div>It's a little cloudy, but rest assured, we are open and ready to help get you into a used cash car!</div></> : null
+          weather.weather[0].main === "Clouds" ? <FontAwesomeIcon icon={faCloud} />   : null
         }
         {
-          weather.weather[0].main === "Rain" ? <><FontAwesomeIcon icon={faCloudRain} />  <div>It's a little wet outside but we're open. Come on in to see our selection of used cash cars!</div></> : null
+          weather.weather[0].main === "Rain" ? <FontAwesomeIcon icon={faCloudRain} />   : null
         }
         {
-          weather.weather[0].main === "Clear" ? <><FontAwesomeIcon icon={faSun} />  <div>The weather is nice. Let us get you in a used cash car today!</div></> : null
-        }
-         */}
-                  {/* ========== STACK OVERFLOW QUESTION ABOVE ========== */}
+          weather.weather[0].main === "Clear" ?  <FontAwesomeIcon icon={faSun} />   : null
+}
+</div>
+                  
+
+                  {/* ADD NAVBAR ICONS */}
+
+
+                
             
             {/* MOBILE NAV BAR */}
         <button
@@ -126,6 +144,7 @@ const Nav = ({ weather }) => {
       </div> 
      
     </nav>
+    
   );
 };
 

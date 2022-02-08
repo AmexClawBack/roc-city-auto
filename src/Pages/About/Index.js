@@ -6,7 +6,7 @@ const About = () => {
         <main className="page relative ">
         <section className="clean-block about-us ">
             <div className="container ">
-                <div className="block-heading  marginTop mb-5">
+                <div className="block-heading  mt-5 mb-5">
                     <h2 className="text-info ">About Us</h2>
                     <p>We are a team of dedicated car professionals with over 30 years of experience helping get people into cash cars</p>
                 </div>

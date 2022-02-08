@@ -74,7 +74,7 @@ const Home = () => {
                 </section>
 
                 {/* FEATURED VEHICLES */}
-                <section className="clean-block features" style={{backgroundColor: "#f5efe9"}}>
+                <section className="clean-block features" style={{backgroundImage: "linear-gradient(180deg, #7c7c7c, #39393c, #7c7c7c)"}}>
                 <div className="row justify-content-center " >
                     <div className="col justify-content-start">
                         <h1 className="text-center  mt-5 mb-5 darkText " ><span style={{color: "#75935f"}}>[ </span>FEATURED VEHICLES <span style={{color: "#75935f"}}>]</span></h1>
@@ -107,7 +107,7 @@ const Home = () => {
                     </div>
                 </div>
                 <button bottomBtn>Call Us!</button>
-                <button bottomBtn>Message Us!</button>
+                <button bottomBtn>Message Seller!</button>
             
         </section>
 

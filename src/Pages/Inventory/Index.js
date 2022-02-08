@@ -1,9 +1,11 @@
 import React from 'react';
 import "./Inventory.css"
 
+
 const Inventory = () => {
+  
     return (
-        <main className="page catalog-page " className="marginTop">
+        <main className="page catalog-page ">
         <section className="clean-block clean-catalog dark ">
             <div className="container ">
                 <div className="block-heading">

@@ -3,7 +3,7 @@ import "./Contact.css"
 
 const Contact = () => {
     return (
-        <main className="page contact-us-page  marginTop">
+        <main className="page contact-us-page  ">
         <section className="clean-block clean-form dark">
             <div className="container">
                 <div className="block-heading">
